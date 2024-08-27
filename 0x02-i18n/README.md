@@ -116,3 +116,11 @@ This project involves internationalizing a Flask web application using Babel. Th
               return app.config['BABEL_DEFAULT_TIMEZONE']
           return app.config['BABEL_DEFAULT_TIMEZONE']
       ```
+
+* **8. Display the current time**
+  * **[app.py](./app.py), [templates/index.html](./templates/index.html), [translations/en/LC_MESSAGES/messages.po](./translations/en/LC_MESSAGES/messages.po), [translations/fr/LC_MESSAGES/messages.po](./translations/fr/LC_MESSAGES/messages.po):** Based on the inferred time zone, display the current time on the home page in the default format. Use the appropriate translations for displaying the time in English and French.
+  * **Usage:**
+    ```bash
+    $ pybabel compile -d translations
+    $ python3 app.py
+    ```
